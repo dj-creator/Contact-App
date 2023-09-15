@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body {
+        background-color: white;
+        color: #007BFF;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 0;
+        margin: 0; /* Add margin to the body to remove default margin */
+    }
+
+    #one {
+        background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+    }
+
+    #main {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box {
+        flex-direction: column;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid 5px black;
+        padding: 30px; /* Increase padding for spacing inside the box */
+        margin-top: 15%; /* Adjust margin for spacing from the top */
+        font-size: 50px;
+    }
+
+    /* Style the form elements for better spacing */
+    form label {
+        margin-bottom: 10px; /* Add margin below labels */
+    }
+
+    form input {
+        margin-bottom: 15px; /* Add margin below input fields */
+        padding: 5px; /* Add padding to input fields */
+    }
+
+    button[type="submit"] {
+        margin-top: 10px; /* Add margin above the submit button */
+    }
+    a{
+        color: #007BFF;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    a:hover {
+            color: #0056b3;
+        }
+</style>
+
+    </style>
+</head>
+
+<body>
+    <h1 id="one">Add Contact</h1>
+    <div id="main">
+        <div class="box">
+            <form action="/add" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <button type="submit ">Add</button> <br>
+                <a href="/">Back To Contact List</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
